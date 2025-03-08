@@ -1,0 +1,35 @@
+:root {
+  --main-purple: rgb(101, 10, 248);
+}
+
+.Username {
+  border-radius: 15px;
+  width: 230px;
+  height: 40px;
+  /* text-align: center; */
+  background-color: transparent;
+  margin: 10px;
+  padding: 20px 30px;
+  font-size: large;
+  color: var(--main-purple);
+  border: 1px solid white;
+  margin-top:80px;
+}
+
+.Username:focus {
+    border-color: var(--main-purple); /* Change the border color when focused */
+    outline: none; /* Remove the default outline */
+  }
+
+.score {
+  color: white;
+  background-color: var(--main-purple);
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}

@@ -1,15 +1,12 @@
+:root{
+    --main-purple: rgb(101, 10, 248);
+}
+
 .option {
     text-align: center;
 }
 
-.goHome {
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 10px;
-    margin: 20px;
-    border-color: rgb(128, 0, 255);
-    padding: 10px 30px;
-}
+
 
 .option {
     width: 300px;

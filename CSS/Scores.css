@@ -1,11 +1,25 @@
-.row {
-    width: 1000px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
+:root {
+  --main-purple: rgb(101, 10, 248);
 }
+
+
+
+
 
 .left {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
+.score-rank {
+  color: white;
+  background-color: var(--main-purple);
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.score-name {
+  margin: auto 10px;
+}

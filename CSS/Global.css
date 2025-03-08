@@ -1,3 +1,7 @@
+:root{
+    --main-purple: rgb(101, 10, 248);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -18,9 +22,15 @@ body {
 }
 
 .header {
-    color: rgb(101, 10, 248);
+    color: var(--main-purple);
     margin: 50px
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .option {
     border-radius: 15px;
@@ -31,25 +41,58 @@ body {
     margin: 10px;
     padding: 20px 30px;
     font-size: large;
-    color: rgb(128, 0, 255);
+    color: var(--main-purple);
 
 }
 
 /* This will ensure that the link text inside the .option element turns white when you hover over the .option button. */
 .option:hover a {
-    background-color: rgb(128, 0, 255);
+    background-color: var(--main-purple);
     color: white;
     cursor: pointer;
 }
 
-.option:hover {
-    background-color: rgb(128, 0, 255);
+.option:hover , .button:hover{
+    background-color: var(--main-purple);
     color: white;
     cursor: pointer;
 }
 
-a {
+a ,button{
     text-decoration: none;
-    color: rgb(128, 0, 255);
+    color:var(--main-purple);
     /* turn the default blue to purple */
 }
+
+.button {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 20px;
+    border:2px solid var(--main-purple);
+    padding: 10px 30px;
+    text-align: center;
+    
+}
+
+.value {
+    color: var(--main-purple);
+    background-color: aliceblue;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    width: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+  }
