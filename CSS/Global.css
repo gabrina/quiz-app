@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* Center items horizontally */
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.header {
+    color: rgb(101, 10, 248);
+    margin: 50px
+}
+
+.option {
+    border-radius: 15px;
+    width: 230px;
+    height: 500 px;
+    /* text-align: center; */
+    background-color: white;
+    margin: 10px;
+    padding: 20px 30px;
+    font-size: large;
+    color: rgb(128, 0, 255);
+
+}
+
+/* This will ensure that the link text inside the .option element turns white when you hover over the .option button. */
+.option:hover a {
+    background-color: rgb(128, 0, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: rgb(128, 0, 255);
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(128, 0, 255);
+    /* turn the default blue to purple */
+}
