@@ -1,5 +1,5 @@
-:root{
-    --main-purple: rgb(101, 10, 248);
+:root {
+    --main-purple: #6757d9;
 }
 
 * {
@@ -10,15 +10,14 @@
 }
 
 body {
-    background-color: aliceblue;
+    max-width: 1000px;
+    ;
+    background-color: #eeedfb;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    /* Center items horizontally */
-    height: 100vh;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .header {
@@ -30,20 +29,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-.option {
+/* .option {
     border-radius: 15px;
     width: 230px;
     height: 500 px;
-    /* text-align: center; */
     background-color: white;
     margin: 10px;
     padding: 20px 30px;
     font-size: large;
     color: var(--main-purple);
-
-}
+    transition: all 0.2s ease-in;
+} */
 
 /* This will ensure that the link text inside the .option element turns white when you hover over the .option button. */
 .option:hover a {
@@ -52,16 +50,28 @@ body {
     cursor: pointer;
 }
 
-.option:hover , .button:hover{
+.option:hover,
+.button:hover {
     background-color: var(--main-purple);
     color: white;
     cursor: pointer;
 }
 
-a ,button{
+a,
+button {
     text-decoration: none;
-    color:var(--main-purple);
+    color: var(--main-purple);
     /* turn the default blue to purple */
+    border-radius: 15px;
+    width: 230px;
+    height: 500 px;
+    background-color: white;
+    margin: 10px;
+    padding: 20px 30px;
+    font-size: large;
+    color: var(--main-purple);
+    transition: all 0.2s ease-in;
+    border: none
 }
 
 .button {
@@ -69,10 +79,10 @@ a ,button{
     background-color: transparent;
     border-radius: 10px;
     margin: 20px;
-    border:2px solid var(--main-purple);
+    border: 2px solid var(--main-purple);
     padding: 10px 30px;
     text-align: center;
-    
+
 }
 
 .value {
@@ -85,9 +95,9 @@ a ,button{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .row {
+.row {
     width: 800px;
     background-color: white;
     display: flex;
@@ -95,4 +105,4 @@ a ,button{
     border-radius: 10px;
     margin: 10px;
     padding: 10px 20px;
-  }
+}

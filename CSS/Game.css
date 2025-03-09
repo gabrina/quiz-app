@@ -1,34 +1,35 @@
 :root {
-    --main-purple: rgb(101, 10, 248);
-  }
+    --main-purple: #6757d9;
+}
 
-.quiz-header{
+.quiz-header {
     display: flex;
-    justify-content: space-around   ;
+    justify-content: space-around;
     width: 1000px;
 }
 
-.right-header,.left-header{
+.right-header,
+.left-header {
     display: flex;
     align-items: center;
 }
 
-.value{
+.value {
     background-color: white;
 }
 
-.quiz-body{
-    margin-top:100px;
+.quiz-body {
+    margin-top: 100px;
 }
 
-.question{
+.question {
     margin-bottom: 50px;
     color: white;
     background-color: var(--main-purple);
     font-weight: bold;
 }
 
-.quiz-button{
+.quiz-button {
     display: flex;
     justify-content: flex-start;
 }
