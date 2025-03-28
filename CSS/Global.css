@@ -11,13 +11,12 @@
 
 body {
     max-width: 1000px;
-    ;
     background-color: #eeedfb;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 200px;
+    padding-top: 100px;
+    text-align: center;
 }
 
 .header {
@@ -30,18 +29,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-/* .option {
-    border-radius: 15px;
-    width: 230px;
-    height: 500 px;
-    background-color: white;
-    margin: 10px;
-    padding: 20px 30px;
-    font-size: large;
-    color: var(--main-purple);
-    transition: all 0.2s ease-in;
-} */
 
 /* This will ensure that the link text inside the .option element turns white when you hover over the .option button. */
 .option:hover a {
@@ -75,14 +62,12 @@ button {
 }
 
 .button {
-    padding: 10px;
     background-color: transparent;
     border-radius: 10px;
     margin: 20px;
     border: 2px solid var(--main-purple);
     padding: 10px 30px;
     text-align: center;
-
 }
 
 .value {
@@ -98,7 +83,7 @@ button {
 }
 
 .row {
-    width: 800px;
+    width: 80%;
     background-color: white;
     display: flex;
     justify-content: space-between;
