@@ -21,9 +21,11 @@
 
 .quiz-body {
   margin-top: 100px;
+  width:100%;
 }
 
 .question {
+  text-align: left;
   margin-bottom: 50px;
   color: white;
   background-color: var(--main-purple);
@@ -47,4 +49,18 @@
 .button{
   width:100px;
   font-size: medium;
+}
+
+.answer:hover{
+  background-color: rgb(214, 214, 214);
+  transition:all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.correctAnswer{
+  background-color: green;
+}
+
+.incorrectAnswer{
+  background-color: red;
 }

@@ -12,16 +12,15 @@
     <div class="container">
       <div id="loader"></div>
     </div>
-    <div class="container" id="container"> 
-      <!-- style="display: none;" -->
+    <div class="container" id="container" style="display: none;"> 
       <div class="quiz-header">
         <div class="left-header">
           <h4>Question No:</h4>
-          <div class="value">1</div>
+          <div class="value" id="no">1</div>
         </div>
         <div class="right-header">
           <h4>Score :</h4>
-          <div class="value">0</div>
+          <div class="value" id="score">0</div>
         </div>
       </div>
       <div class="quiz-body container">
@@ -32,8 +31,8 @@
         <div class="row answer"></div>
       </div>
       <div class="quiz-button">
-        <button class="button">Finish</button>
-        <button class="button">Next</button>
+        <button class="button" id="finish">Finish</button>
+        <button class="button" id="next">Next</button>
       </div>
     </div>
     <script type="module" src="Js/formatter.js"></script>
