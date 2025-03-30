@@ -4,9 +4,10 @@ const savedScores = JSON.parse(localStorage.getItem("savedScore")) || [];
 //selecting elements
 const container = document.querySelector(".container");
 
+savedScores.sort((a, b) => b.value - a.value); //didn;t get it. got from catgpt   
+
 if (savedScores.length > 0) {
   savedScores.forEach((element, index) => {
-    console.log(element, index);
     container.innerHTML += `<div class="row">
   <div class="left">
     <div class="score-rank">${index + 1}</div>
