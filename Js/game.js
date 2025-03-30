@@ -17,6 +17,7 @@ let formattedData = null;
 let questionIndex = 0; //the index of the question which is currently displayed
 let correctAnswer = null;
 let score = 0;
+let isAnswerSelected = false;
 
 //reading local storage for difficulty
 const level = JSON.parse(localStorage.getItem("level")) || "medium"; //medium by default
@@ -68,6 +69,10 @@ const updateScore = () => {
 //check if the selected answer by user is right
 const checkAnswer = (event, selectedAnswer) => {
   //the correct answer index is saved in correctAnswer
+
+  //preventing from other answers be selected
+  if (isAnswerSelected) return;
+  isAnswerSelected = true;
   if (selectedAnswer == correctAnswer) {
     event.target.classList.add("correctAnswer");
     score += 10;
@@ -83,6 +88,8 @@ const checkAnswer = (event, selectedAnswer) => {
 
 //whatever must happens when user hit Next
 const handleNextquestion = () => {
+  //remove the isAnswerSelected flag
+  isAnswerSelected = false;
   questionIndex++; //differs from 0 to 9
   updateQuestionIndex();
   showQuestion();
